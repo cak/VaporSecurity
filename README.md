@@ -1,5 +1,5 @@
 # VaporSecurity
-A community curated list of application security resources for Vapor developers. 
+A community curated list of application security resources for [Vapor](https://vapor.codes) developers. 
 
 #### To Do
 - [ ] Resource descriptions
@@ -12,7 +12,7 @@ Contribute by submitting a pull request with changes or post resources in the `#
   - [Vapor](#vapor)
 	  - [Articles](#articles)
 		  - [General](#general)
-		  - [Authentication](#Authentication)
+		  - [Authentication](#authentication)
 	  - [Libraries/Packages](#libraries-packages)
 	- [Application Security](#application-security)
     - [General](#general)
