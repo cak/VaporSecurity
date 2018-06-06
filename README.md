@@ -1,9 +1,6 @@
 # VaporSecurity
 A community curated list of application security resources for [Vapor](https://vapor.codes) developers. 
 
-#### To Do
-- [ ] Resource descriptions
-- [ ] Bi-weekly Vapor AppSec Newsletter/Ezine
 
 #### Contributions
 Contribute by submitting a pull request with changes or post resources in the `#security` channel in [Vapor Chat](https://discord.gg/BnXmVGA). 
@@ -37,15 +34,16 @@ Contribute by submitting a pull request with changes or post resources in the `#
 - [HTTP Basic Authorization in Vapor 3 - Vapor Forums](https://www.vaporforums.io/thread/41)
 
 ### Libraries
-- [brokenhandsio/VaporSecurityHeaders: Harden Your Security Headers For Vapor](http://github.com/brokenhandsio/VaporSecurityHeaders)
-- [vapor-community/tls: 🔒 Non-blocking, event-driven TLS built on OpenSSL & macOS security.](https://github.com/vapor-community/tls)
-- [vapor-community/CSRF: A package to add protection to Vapor against CSRF attacks.](https://github.com/vapor-community/CSRF)
-- [vapor/auth: 👤 Authentication and Authorization layer for Fluent.](https://github.com/vapor/auth)
-- [brokenhandsio/vapor-oauth: OAuth2 Provider Library for Vapor](https://github.com/brokenhandsio/vapor-oauth)
-- [brokenhandsio/vapor-oauth-fluent: Fluent Implementations For Vapor OAuth](https://github.com/brokenhandsio/vapor-oauth-fluent)
-- [vapor-community/Imperial: Federated Authentication with OAuth providers](https://github.com/vapor-community/Imperial)
-- [vapor-community/bcrypt: Swift implementation of the BCrypt password hashing function](https://github.com/vapor-community/bcrypt)
-- [gotranseo/vapor-recaptcha: A Vapor 3 library for validating Google reCAPTCHA submissions](https://github.com/gotranseo/vapor-recaptcha)
+- [brokenhandsio/vapor-oauth-fluent](https://github.com/brokenhandsio/vapor-oauth-fluent) - Fluent Implementations For Vapor OAuth
+- [brokenhandsio/vapor-oauth](https://github.com/brokenhandsio/vapor-oauth) - OAuth2 Provider Library for Vapor
+- [brokenhandsio/VaporSecurityHeaders](http://github.com/brokenhandsio/VaporSecurityHeaders) - Harden Your Security Headers For Vapor
+- [gotranseo/vapor-recaptcha](https://github.com/gotranseo/vapor-recaptcha) - A Vapor 3 library for validating Google reCAPTCHA submissions
+- [vapor-community/bcrypt](https://github.com/vapor-community/bcrypt) - Swift implementation of the BCrypt password hashing function
+- [vapor-community/CSRF](https://github.com/vapor-community/CSRF) - A package to add protection to Vapor against CSRF attacks
+- [vapor-community/Imperial](https://github.com/vapor-community/Imperial) - Federated Authentication with OAuth providers
+- [vapor-community/moat](https://github.com/vapor-community/moat) - A line of defense for your Vapor application including XSS attack filtering + extras.
+- [vapor-community/tls](https://github.com/vapor-community/tls) - Non-blocking, event-driven TLS built on OpenSSL & macOS security
+- [vapor/auth](https://github.com/vapor/auth) - Authentication and Authorization layer for Fluent
 
 ## Application Security
 ### General
