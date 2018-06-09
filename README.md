@@ -3,7 +3,12 @@ A community curated list of application security resources for [Vapor](https://v
 
 
 #### Contributions
-Contribute by submitting a pull request with changes or post resources in the `#security` channel in [Vapor Chat](https://discord.gg/BnXmVGA). 
+Contribute by submitting a pull request with changes or post resources in the `#security` channel in [Vapor Discord](https://discord.gg/BnXmVGA). 
+
+## Articles
+* [Cross-Site Scripting (XSS)](https://github.com/cakinney/VaporSecurity/blob/master/articles/001-VaporSecurity-XSS.md)
+
+# Resources
 
 - [Vapor Security](#vapor-security)
   - [Vapor](#vapor)
