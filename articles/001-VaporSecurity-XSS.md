@@ -10,7 +10,7 @@ Cross-Site Scripting (XSS) is a code injection vulnerability that allows an atta
 * **DOM Based XSS** is exploited client side in the DOM (Document Object Model) and is never sent to the server.
 
 ## XSS Examples
-*Note: Using [Leaf](https://github.com/vapor/leaf) protects you from XSS attacks, so in these examples we will be using the custom `#shrug` Leaf tags from [Moat](https://github.com/vapor-community/moat) that has no filtering or encoding. Also, alerts are used as a common and visible proof of concept for XSS/JavaScript.*
+*Note: Using the default [Leaf](https://github.com/vapor/leaf) tag protects you from XSS attacks, so in these examples we will be using the `#get` tag that has no filtering or encoding. Also, alerts are used as a common and visible proof of concept for XSS/JavaScript.*
 
 ### HTML Tags
 If HTML tags are not filtered or encoded, attackers can use valid tags, which will be interpreted by the browser as HTML/JavaScript. 
@@ -20,7 +20,7 @@ If HTML tags are not filtered or encoded, attackers can use valid tags, which wi
 
 *HTML:*  
 ```HTML
-<h1>Welcome #shrug(variable)!</h1>
+<h1>Welcome #get(variable)!</h1>
 ```
 
 *Request:*  
@@ -40,7 +40,7 @@ If “ or ‘ is not encoded, attackers can break out of attribute tags and use 
 
 *HTML:*  
 ```HTML
-<input id="#shrug(variable)" type=“text”>
+<input id="#get(variable)" type=“text”>
 ```
 
 *Request:*  
@@ -48,7 +48,7 @@ If “ or ‘ is not encoded, attackers can break out of attribute tags and use 
 
 *Response:*  
 ```HTML
-<input id="foo" onfocus="alert(1337)" autofocus="">
+<input id="foo" onfocus="alert(1337)" autofocus="" type=“text”>
 ```
 
 ### href/src/data Tags
@@ -59,7 +59,7 @@ Untrusted data placed in href, src or data tags are commonly not projected by te
 
 *HTML:*  
 ```HTML
-<a href="#shrug(variable)">My Profile</a>
+<a href="#get(variable)">My Profile</a>
 ```
 
 *Request:*  
@@ -114,10 +114,12 @@ let sessionsConfig = SessionsConfig(cookieName: "vapor-session") { value in
 *Set-Cookie HTTP response header:*   
 
 ```
-Set-Cookie: vapor-session=iWnOR+XFSSA5RB+siePPig==; Expires=Sat, 16 Jun 2018 12:18:32 GMT; Path=/; Secure; HttpOnly; SameSite=Lax
+Set-Cookie: vapor-session=abcXYZ;
+Expires=Sat, 16 Jun 2018 12:18:32 GMT;
+Path=/; Secure; HttpOnly; SameSite=Lax
 ```
 
-### FIEO/Filters
+### FIEO
 *Filter Input, Escape Output* - Filter and escape malicious characters and content as context requires. [vapor-community/moat](https://github.com/vapor-community/moat/) offers filtering and custom Leaf tags for your Vapor application.
 
 ### Quote Attributes
