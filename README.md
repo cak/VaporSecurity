@@ -7,6 +7,7 @@ Contribute by submitting a pull request with changes or post resources in the `#
 
 ## Articles
 * [Cross-Site Scripting (XSS)](https://github.com/cakinney/VaporSecurity/blob/master/articles/001-VaporSecurity-XSS.md)
+* [Cross-Site Request Forgery](https://github.com/cakinney/VaporSecurity/blob/master/articles/002-VaporSecurity-CSRF.md)
 
 # Resources
 
